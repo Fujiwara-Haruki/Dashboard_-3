@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: poppins, sans-serif;
+
+}
+
+:root{ /* :root = cria variáveis globais no css*/
+   --cor_menu: linear-gradient(to right, rgb(110, 168, 96), rgb(23, 49, 31));
+   --altura_cabecalho: 94px;
+}
+
+.header{ 
+    background: var(--cor_menu);
+
+    display: flex; /*alinha na horizontal*/
+    justify-content: space-between; /*espaço entre eles no meio*/
+    align-items: center; /*centraliza na vertical*/
+    padding: 5px;
+}
+
+i{
+    color: rgb(112, 36, 8)
+}
+
+
+.logo{
+    height: 80px;
+}
+
+.user{
+    height: 60px;
+    border-radius: 50%;
+}
+
+.corpo{
+    height: calc(100vh - var(--altura_cabecalho));
+}
+
+.menu{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(22, 104, 70);
+    padding: 10px;
+    color: rgb(153, 212, 145);
+
+    /*animação
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;*/
+}
+
+.linha_menu{
+    background-color:black
+}
+
+/*opçoes menu*/
+.menu li {
+    padding: 10px;
+
+}
+.link_menu {
+    color: rgb(153, 212, 145);
+    text-decoration: none;
+    padding: 10px;
+    
+}
+
+.link{
+    color: rgb(153, 212, 145);
+    text-decoration: none;
+    padding: 10px; 
+}
+
+.link:hover{
+    background-color: rgb(153, 212, 145);
+}
+
+.link:hover a{
+    
+    color: rgb(22, 104, 70);
+    
+
+}
+
+.link a:hover{
+    color: rgb(22, 104, 70);
+    
+}
+
+
+/*------------exemplos--------------*/
+
+/* celular
+@media (max-width : 500px) { quando a largura for 500px ou menor, mudar a estrutura do site
+    .menu{
+        display: none;
+
+    }
+
+}
+
+@keyframes animation { animação
+    from{ 
+        background-color: red;
+    }
+    25%{ 
+        background-color: blue;
+    }
+    50%{
+        background-color: rgb(22, 104, 70);
+    }
+    to{
+        background-color: red;
+    }
+
+}*/
