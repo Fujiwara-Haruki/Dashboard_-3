@@ -10,26 +10,41 @@ body{
 }
 
 :root{ /* :root = cria variáveis globais no css*/
-   --cor_menu: linear-gradient(to right, rgb(110, 168, 96), rgb(23, 49, 31));
-   --altura_cabecalho: 94px;
+   --cor_menu: #B0D9B1;
+   --altura_cabecalho: 90px;
+   --cor_menu_lateral: #79AC78;
 }
 
 .header{ 
     background: var(--cor_menu);
-
+    height: var(--altura_cabecalho);
     display: flex; /*alinha na horizontal*/
     justify-content: space-between; /*espaço entre eles no meio*/
     align-items: center; /*centraliza na vertical*/
-    padding: 5px;
+    padding: 35px 40px;
 }
 
-i{
-    color: rgb(112, 36, 8)
+.header_details{
+    display: flex;
+    align-items: center;
+}
+
+i{ /*icon*/
+    color: #333;
+    padding: 10px
 }
 
 
+/*imagem-------------------------------*/
 .logo{
-    height: 80px;
+    height: 50px;
+    width: auto;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    object-fit: cover; /*fixa a imagem pra não distorcer o tamanho do elemento pai*/
+
 }
 
 .user{
@@ -37,6 +52,10 @@ i{
     border-radius: 50%;
 }
 
+.user:hover{
+    transform: scale(1.1);
+}
+/*---------------------------------------*/
 .corpo{
     height: calc(100vh - var(--altura_cabecalho));
 }
@@ -44,9 +63,8 @@ i{
 .menu{
     width: 20%;
     height: 100%;
-    background-color: rgb(22, 104, 70);
-    padding: 10px;
-    color: rgb(153, 212, 145);
+    background-color: var(--cor_menu_lateral);
+    color: rgb(220, 243, 217);
 
     /*animação
     animation-name: animation;
@@ -54,43 +72,30 @@ i{
     animation-iteration-count: infinite;*/
 }
 
-.linha_menu{
-    background-color:black
+.items_button{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    gap: 10px; /*espaço entre os elementos do botão (precisa do display flex)*/
+    border: none;
+    padding-left: 15px;
+}
+
+#icon{
+    color: white;
+}
+
+.items_button:hover{
+    background-color: #e48f84;
 }
 
 /*opçoes menu*/
-.menu li {
-    padding: 10px;
 
-}
-.link_menu {
-    color: rgb(153, 212, 145);
-    text-decoration: none;
-    padding: 10px;
-    
-}
 
-.link{
-    color: rgb(153, 212, 145);
-    text-decoration: none;
-    padding: 10px; 
-}
-
-.link:hover{
-    background-color: rgb(153, 212, 145);
-}
-
-.link:hover a{
-    
-    color: rgb(22, 104, 70);
-    
-
-}
-
-.link a:hover{
-    color: rgb(22, 104, 70);
-    
-}
 
 
 /*------------exemplos--------------*/
