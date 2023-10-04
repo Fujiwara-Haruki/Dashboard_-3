@@ -6,7 +6,6 @@
 
 body{
     font-family: poppins, sans-serif;
-
 }
 
 :root{ /* :root = cria variáveis globais no css*/
@@ -58,6 +57,7 @@ i{ /*icon*/
 /*---------------------------------------*/
 .corpo{
     height: calc(100vh - var(--altura_cabecalho));
+    display: flex;
 }
 
 .menu{
@@ -91,6 +91,23 @@ i{ /*icon*/
 
 .items_button:hover{
     background-color: #e48f84;
+}
+
+.principal{
+    
+    width: 100%;
+}
+
+.formulario_produto{
+    position: relative;
+    text-align: center;
+    width: 50%;
+    justify-content: center;
+    
+}
+
+.campo{
+    width: 100%;
 }
 
 /*opçoes menu*/

@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--ICONS-->
 
     
+
+    
 </head>
 <body>
     <!--cabeçalho-->
@@ -57,15 +59,39 @@
         </aside>
 
         <main class="principal">
+
+            <form action="#" method="post" class="formulario_produto">
+                <label for="nome">Nome do Produto:</label>
+                <input class="campo" type="text" id="nome" name="nome" value="" > <br/>
+                <!--descrição-->
+                <label for="description">Descrição:</label>
+                <input class="campo" type="text" id="description" name="description" value="" > <br/>
+                <!--valor-->
+                <label for="valor">Valor:</label>
+                <input class="campo"  type="number" id="valor" name="valor" value="" > <br/>
+
+                <input type="submit" value="Cadastrar">
+
+                <!--tabela pros produtos ()-->
+                <table class="tabela_produto">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Descricao</th>
+                            <th>Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    
+                    </tbody>
+    
+                </table>
+            </form>
+
         </main>
     </div>
 
-    <script>
-        alert("Hello World");
-        //let componente = document.getElementById("id")
-        let componente = document.querySelector(".principal");
-        componente.innerHTML = "asddfsaf"; //innerHTML = escrever algo na tela
-    </script>
+    <script src="index.js"></script>
 
 </body>
 </html>
