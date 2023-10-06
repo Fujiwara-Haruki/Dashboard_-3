@@ -1,0 +1,36 @@
+/*principal----------------------------------*/
+
+.texto_1{
+    margin: 50px;
+    
+    text-align: justify;
+}
+
+.div_video{
+    display: flex;
+    justify-content:center;
+}
+
+.video{
+    height: 400px;
+    
+}
+
+/*celular*/
+
+@media (width < 1149px), (width > 827){
+    .video{
+        height: 300px;
+    }
+}
+
+@media (width < 827px), (width > 580){
+    .video{
+        height: 200px;
+    }
+}
+@media (width < 580px){
+    .video{
+        height: 150px;
+    }
+}
